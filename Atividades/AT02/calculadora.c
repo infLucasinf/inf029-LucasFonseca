@@ -4,45 +4,53 @@
 int main(){
 
     int a;
-    float b, c, d, e, f, g;
+    float num1, num2, resultado;
 
-     printf("\nDigite uma das opcoes: 0 - Sair, 1 - Somar, 2 - Subtrair, 3 - Multiplicar, 4 - Dividir.\n");
+    for(;;){     
+     printf("\nDigite uma das opcoes:\n\n0 - Sair \n1 - Somar \n2 - Subtrair \n3 - Multiplicar \n4 - Dividir\n\nOpcao: ");
      scanf("%d", &a);
 
-      switch(a){
-       case 0:
-        printf(" Sistema encerrado");
-        return 0;
+       switch(a){
+        case 0:{
+           printf(" Sistema encerrado");
+           return 0;
+        }
           case 1:{
-              printf(" \nVamos somar.\n");
-              scanf(" %f%f",&b,&c);
-              d=b+c;
-              printf(" %.2f",d);
+              printf(" \nVamos somar, digite o primeiro e o segundo numero:\n\n");
+              scanf("%f%f",&num1,&num2);
+              resultado=num1+num2;
+              printf("%.2f",resultado);
               break;
           }
-          case 2:
-              printf(" \nVamos subtrair.\n");
-              scanf(" %f%f",&b,&c);
-              d=b-c;
-              printf(" %.2f",d);
+          case 2:{
+              printf(" \nVamos subtrair, digite o primeiro e o segundo numero:\n\n");
+              scanf("%f%f",&num1,&num2);
+              resultado=num1-num2;
+              printf("%.2f",resultado);
               break;
-          case 3:
-              printf(" \nVamos multiplicar.\n");
-              scanf(" %f%f",&b,&c);
-              d=b*c;
-              printf(" %.2f",d);
+           }
+          case 3:{
+              printf(" \nVamos multiplicar, digite o primeiro e o segundo numero:\n\n");
+              scanf("%f%f",&num1,&num2);
+              resultado=num1*num2;
+              printf("%.2f",resultado);
               break;
-          case 4:
-              printf(" \nVamos dividir.\n");
-              scanf(" %f%f",&b,&c);
-                 if(c==0){
-                    printf("Nao e possivel efetuar divisoes por zero, escolha outro valor");
             }
-              d=b/c;
-              printf(" %f",d);
+          case 4:{
+              printf(" \nVamos dividir, digite o primeiro e o segundo numero:\n\n");
+              scanf("%f%f",&num1,&num2);
+                 if(num2==0){
+                    printf("\nNao e possivel efetuar divisoes por zero, escolha outro valor");
+            }
+              resultado=num1/num2;
+              printf("%.2f",resultado);
               break;
+             }
          default:
-              printf(" Invalido");
-              return 0;
-     }
+              printf("Numero invalido.");
+              return 1;
+              
+       }
+  printf("\n");
+    }
 }
