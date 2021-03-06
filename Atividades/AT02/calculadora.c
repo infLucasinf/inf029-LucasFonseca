@@ -7,17 +7,17 @@ int main(){
     float num1, num2, resultado;
 
     for(;;){     
-     printf("\nDigite uma das opcoes:\n\n0 - Sair \n1 - Somar \n2 - Subtrair \n3 - Multiplicar \n4 - Dividir\n\nOpcao: ");
-     scanf("%d", &a);
+    printf("\nDigite uma das opcoes:\n\n0 - Sair \n1 - Somar \n2 - Subtrair \n3 - Multiplicar \n4 - Dividir\n\nOpcao: ");
+    scanf("%d", &a);
 
        switch(a){
-        case 0:{
+       case 0:{
            printf(" Sistema encerrado");
            return 0;
         }
           case 1:{
               printf(" \nVamos somar, digite o primeiro e o segundo numero:\n\n");
-              scanf("%f%f",&num1,&num2);
+              scanf("%f%f", &num1, &num2);
               resultado=num1+num2;
               printf("%.2f",resultado);
               break;
@@ -39,7 +39,7 @@ int main(){
           case 4:{
               printf(" \nVamos dividir, digite o primeiro e o segundo numero:\n\n");
               scanf("%f%f",&num1,&num2);
-                 if(num2==0){
+              if (num2==0){
                     printf("\nNao e possivel efetuar divisoes por zero, escolha outro valor");
             }
               resultado=num1/num2;
@@ -51,6 +51,6 @@ int main(){
               return 1;
               
        }
-  printf("\n");
+         printf("\n");
     }
 }
