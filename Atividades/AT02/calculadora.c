@@ -4,14 +4,14 @@
 int main(){
 
     int a;
-    float num1, num2, resultado;
+    float num1,  num2,  resultado;
 
     for(;;){     
     printf("\nDigite uma das opcoes:\n\n0 - Sair \n1 - Somar \n2 - Subtrair \n3 - Multiplicar \n4 - Dividir\n\nOpcao: ");
     scanf("%d", &a);
 
-       switch(a){
-       case 0:{
+         switch(a){
+         case 0:{
            printf(" Sistema encerrado");
            return 0;
         }
@@ -49,8 +49,7 @@ int main(){
          default:
               printf("Numero invalido.");
               return 1;
-              
-       }
+           }
          printf("\n");
     }
 }
