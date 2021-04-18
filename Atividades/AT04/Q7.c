@@ -20,7 +20,7 @@
         ler result;
 
         printf("Digite tres palavras:\n");
-        scanf("%s %s %s",&result.palavra1, &result.palavra2, &result.palavra3);
+        scanf("%s %s %s",result.palavra1, result.palavra2, result.palavra3);
         return result;
         }
 
