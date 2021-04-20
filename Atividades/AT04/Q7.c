@@ -13,7 +13,7 @@
     }
 
     int main(){
-    printf("\n\nQuestao 07 - Ler tres palavras\n\n");   
+    printf("\n\n -- Questao 07 - Ler tres palavras -- \n\n");   
         
        
         ler G(void){
