@@ -27,7 +27,7 @@ int main()
    //digita a data
    char data[11];
    //ler a data em "data"
-   validarData(data);
+   int validarData(int data);
 
 
 /*void testSomar()
@@ -50,9 +50,7 @@ void testFatorial()
 
 void testQ1()
 {
-    char str[11];
-
-     printf("Questão 1");
+    char str[13];
 
     strcpy(str, "20/02/2012");
     printf("%d\n", q1(str) == 1);
